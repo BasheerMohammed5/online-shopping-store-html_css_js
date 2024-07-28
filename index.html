@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="container" id="container">
+            <div class="logo-search">
+                <div class="logo">
+                    <img src="imeg/logo.png" alt="Eshop Logo">
+                    <!-- <span>Eshop</span> -->
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="auth-cart">
+                    <button class="sign-in" onclick="openLoginModal()">Sign In</button>
+                    <button class="cart" onclick="openCartModal()"> Cart (<span class="cart-count">0</span>)</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#container">Home</a></li>
+                    <li><a href="#swiper-container">Product Offers</a></li>
+                    <li><a href="#shop-content">Products</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide product-card">
+                <div class="product-image">
+                    <img src="imeg/card1.jpg" alt="Product 1">
+                    <div class="product-name">Product 1</div>
+                </div>
+                <div class="product-info">
+                    <div class="price-before">$50.00</div>
+                    <div class="price-after">$30.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="swiper-slide product-card">
+                <div class="product-image">
+                    <img src="imeg/laptop1.jpeg" alt="Product 1">
+                    <div class="product-name">Product 1</div>
+                </div>
+                <div class="product-info">
+                    <div class="price-before">$60.00</div>
+                    <div class="price-after">$40.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="swiper-slide product-card">
+                <div class="product-image">
+                    <img src="imeg/mb.jpg" alt="Product 1">
+                    <div class="product-name">Product 1</div>
+                </div>
+                <div class="product-info">
+                    <div class="price-before">$100.00</div>
+                    <div class="price-after">$70.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="swiper-slide product-card">
+                <div class="product-image">
+                    <img src="imeg/1.jpg" alt="Product 1">
+                    <div class="product-name">Product 1</div>
+                </div>
+                <div class="product-info">
+                    <div class="price-before">$200.00</div>
+                    <div class="price-after">$100.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="shop-content" id="shop-content">
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img8.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Iced Coffee</h2>
+            <div class="food-details">
+                <span class="food-price">$65</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img1.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Choco Truffle Cake</h2>
+            <div class="food-details">
+                <span class="food-price">$165</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img2.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Frappe</h2>
+            <div class="food-details">
+                <span class="food-price">$65</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img3.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Brewed Coffee</h2>
+            <div class="food-details">
+                <span class="food-price">$100</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img10.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Pineapple Pastry</h2>
+            <div class="food-details">
+                <span class="food-price">$125</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img6.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Mocha</h2>
+            <div class="food-details">
+                <span class="food-price">$110</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img7.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Espresso</h2>
+            <div class="food-details">
+                <span class="food-price">$90</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="food-box">
+            <div class="pic">
+                <img src="imeg/img9.jpg" class="food-img">
+            </div>
+            <h2 class="food-title">Ferrero Rocher Pastry</h2>
+            <div class="food-details">
+                <span class="food-price">$145</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal for Cart -->
+<div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="close-cart-modal">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cartItems" class="cart-items-container">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="footer" id="footer">
+
+    <div class="content">
+        <h3>bakery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="shar">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+
+    <div class="link">
+        <h3>links</h3>
+        <a href="#home">home</a>
+        <a href="#about">about us</a>
+        <a href="#products">products</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact us</a>
+    </div>
+
+    <div class="our-servis">
+        <h3>services</h3>
+        <a href="#">Web Design</a>
+        <a href="#">Web Development</a>
+        <a href="#">Product Management</a>
+        <a href="#">Marketing</a>
+        <a href="#">Web Design</a>
+    </div>
+
+    <div class="Ournews">
+        <h3>Our Newsletter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias, deleniti enim eos numquam</p>
+        <form action="">
+            <input type="email" placeholder="your email" id="Subscribe-em">
+            <label for="Subscribe-em" >sgineup</label>
+        </form>
+        
+</footer>
+
+<!-- Login Modal -->
+<div id="loginModal" class="login-modal">
+    <div class="login-container">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h2>Please enter your username and password to login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-control">
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control">
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <div class="form-group">
+                <a href="#" class="forgot-password">Forgot your password?</a>
+            </div>
+            <button type="button" id="loginButton" class="btn">LOG IN</button>
+        </form>
+        <div class="register">
+            <p>Not registered yet? <a href="#">Click here to register</a></p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+
+
+</html>
